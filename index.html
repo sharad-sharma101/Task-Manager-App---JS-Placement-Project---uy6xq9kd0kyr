@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel = "stylesheet" href = "main.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- form modal -->
+    <div id = "fullscreen-div"></div>
+    <form class = "modal" id = "modal">
+        <div class = "modal-content">
+            <div class = "modal-head">
+                <h3 id = "modal-title">Add Address</h3>
+                <button type="button" id = "close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
+            </div>
+            <div class = "modal-main">
+                <div class = "modal-row">
+                    <div class = "modal-col">
+                        <label for="">TITLE</label>
+                        <input type = "text" placeholder="Title of your note" class = "form-control" name = "addr_ing_name">
+                    </div>
+                </div>
 
+
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">Discription</label>
+                        <textarea type = "text" placeholder="discription of your notes" class = "form-control" name = "street_addr" cols="40" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class = "modal-row">
+                    <div class = "modal-col">
+                        <label for = "">Labels</label>
+                        <select name = "labels">
+                            <option value = "start">start</option>
+                            <option value = "reviwe">in reviwe</option>
+                            <option value = "process">in process</option>
+                            <option value = "done">done</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "modal-row" id = "modal-btns">
+                    <button type = "submit" id = "save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- end of form modal -->
+
+    <!-- address book home -->
+    <div class = "addr-book" id = "addr-book">
+        <div class = "addr-book-content">
+            <div class = "addr-book-head">
+                <i class = "fa-solid fa-address-book fa-2x"></i>
+                <h2>Task<span>Manager</span></h2>
+            </div>
+
+            <div class = "addr-book-top">
+                <button type = "button" class = "btn" id = "add-btn">
+                    <span><i class = "fas fa-plus"></i>ADD NEW TASK</span>
+                </button>
+            </div>
+
+            <div class = "addr-book-list" id = "addr-book-list">
+               <div class="stages" >
+                  <div class="start" id="container">START</div>
+                  <div class="process" id="container">IN PROCESS</div>
+                  <div class="reviwe" id="container">IN REVIWE</div>
+                  <div class="done" id="container">DONE</div>   
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of address book home -->
+    <script src = "app.js"></script>
+</body>
+</html>
