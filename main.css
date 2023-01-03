@@ -204,15 +204,15 @@ button{
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
     background-color: var(--orange-color);
-    -webkit-box-shadow: 0 2px 0 0 #bd5305;
-            box-shadow: 0 2px 0 0 #bd5305;
+    -webkit-box-shadow: 0 2px 0 0 #f8c8a6;
+            box-shadow: 0 2px 0 0 #f8c8a6;
 }
 .addr-book-top .btn:hover{
     -webkit-transform: translateY(1px);
         -ms-transform: translateY(1px);
             transform: translateY(1px);
-    -webkit-box-shadow: 0 1px 0 0 #bd5305;
-            box-shadow: 0 1px 0 0 #bd5305;;
+    -webkit-box-shadow: 0 1px 0 0 #f8c8a6;
+            box-shadow: 0 1px 0 0 #f8c8a6;;
 }
 .addr-book-list{
     margin: 1rem 0;
@@ -284,6 +284,7 @@ button{
     border-radius: 5px;
     padding: 3px;
     width: 13rem;
+    box-shadow: 3px 5px #888888;
 }
 .addressing-name {
     font-size: larger;
@@ -306,3 +307,48 @@ button{
 .drag{
     opacity: 0.5;
 }
+
+.done , .start , .process , .reviwe {
+    padding: 2px;
+    min-height: 300px;
+    min-width: 16rem;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.done h2 , .start h2 , .process h2, .reviwe h2 {
+      margin-bottom: 10px;
+      margin-top: 5px;
+}
+.done {
+ background-color: #90EE90;
+}
+.start{
+background-color: #FFB6C1;
+}
+.process{
+background-color: #FFA07A;
+}
+.reviwe{
+background-color: #D3D3D3;
+}
+
+
+.drag{
+    opacity: 0.5;
+}
+#note-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+}
+.bi-list-task{
+    margin-right: 5px;
+}
+
+
+
+
+               
